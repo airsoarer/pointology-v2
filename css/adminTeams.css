@@ -1,0 +1,24 @@
+body {
+    --carolinaBlue: #99badd;
+    --white: #FFFFFF;
+    --navyBlue: #0C2340;
+    --gold: #C99700;
+}
+
+input {
+    margin-top: 30px !important;
+}
+
+#mens button, #womens button {
+    margin-top: 26px !important;
+    background-color: transparent;
+    border: solid 2px var(--navyBlue);
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blackPlaceholder::placeholder{
+    color: black;
+}
+

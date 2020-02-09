@@ -1,0 +1,32 @@
+body {
+    --carolinaBlue: #99badd;
+    --white: #FFFFFF;
+    --navyBlue: #0C2340;
+    --gold: #C99700;
+}
+
+#mens, #womens {
+    margin-top: 50px;
+}
+
+.teamList {
+    margin-top: 20px;
+}
+
+.teamViewBtn {
+    background-color: transparent;
+    border: solid var(--navyBlue) 2px;
+    margin-top: 18px;
+    color: var(--navyBlue);
+}
+
+.teamViewBtn:hover {
+    border: solid var(--navyBlue) 2px;
+    color: var(--white);
+    background-color: var(--navyBlue);
+    transition-duration: .2s;
+}
+
+.modal {
+    height: 350px;
+}

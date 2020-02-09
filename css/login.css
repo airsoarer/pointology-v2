@@ -1,0 +1,41 @@
+body {
+    --carolinaBlue: #99badd;
+    --white: #FFFFFF;
+    --navyBlue: #0C2340;
+    --gold: #C99700;
+}
+
+i {
+    color: var(--navyBlue);
+}
+
+input:focus {
+    border-bottom-color: var(--navyBlue) !important;
+}
+
+label {
+    font-size: 16px !important;
+}
+
+li a {
+    color: black;
+}
+
+button {
+    height: 50px !important;
+    background-color: transparent;
+    border: solid 2px var(--navyBlue);
+    margin-top: 25px !important;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--navyBlue);
+    transition-duration: .4s;
+}
+
+.login {
+    height: 75vh;
+    margin-top: 10vh;
+}
+

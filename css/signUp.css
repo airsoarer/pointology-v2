@@ -1,0 +1,51 @@
+body {
+    --carolinaBlue: #99badd;
+    --white: #FFFFFF;
+    --navyBlue: #0C2340;
+    --gold: #C99700;
+}
+
+i {
+    color: var(--navyBlue);
+}
+
+h2 {
+    color: white;
+    padding-top: 12%;
+    font-size: 80px !important;
+}
+
+ul a {
+    color: black;
+}
+
+select {
+    padding-top: 50px !important;
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #9E9E9E;
+    height: 20px;
+}
+
+#enter {
+    height: 50px;
+    border: solid var(--navyBlue);
+    margin-top: 20px;
+}
+
+#enter:hover {
+    color: white;
+    background-color: var(--navyBlue);
+    transition-duration: .2s;
+}
+
+#enter:focus {
+    background-color: white;
+}
+
+.signUp {
+    height: 100vh;
+}

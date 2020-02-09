@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pointology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/seed.css"> -->
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/adminTeams.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/adminTeams.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col s12 m12 nav">
+                <div class="col s1 offset-m1 hide-on-med-and-up">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons medium">menu</i></a>
+                </div>
+                <div class="col m12 hide-on-small-only">
+                    <ul>
+                        <li><img src="../images/banner.PNG" alt="" class="col m2"></li>
+                        <li><a href="admin.html" class="col m1 offset-m5">Entries</a></li>
+                        <li><a href="adminTeams.html" class="col m1">Teams</a></li>
+                        <li><a href="adminTracking.html" class="col m2">"Sweet 16" Tracking</a></li>
+                        <li><button id="logout">Logout</button></li>
+                    </ul>
+                </div>
+                <ul class="sidenav center-align" id="slide-out">
+                    <li><a href="admin.html" class="col s12">Entries</a></li>
+                    <li><a href="adminTeams.html" class="col s12">Teams</a></li>
+                    <li><a href="adminTracking.html" class="col s12">"Sweet 16" Tracking</a></li>
+                    <li><button id="logout">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m10 offset-m1">
+                <h3>Teams & Scores</h3>
+                <ul class="tabs card">
+                    <li class="tab col s6 m6"><a href="#mens">Mens Teams Entries</a></li>
+                    <li class="tab col s6 m6"><a href="#womens">Womens Teams Entries</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row teamContain">
+            <div class="col s12 m10 offset-m1" id="mens"></div>
+            <div class="col s12 m10 offset-m1" id="womens"></div>
+        </div>
+        <footer style="margin-bottom: 0px !important;" class="row">
+            <div class="col m10 offset-m1 left-align title">
+                <h3 class="left-align">Pointology</h3>
+                <div class="col m4">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li class="col s12 m12"><a href="index.html">Home</a></li>
+                        <li class="col s12 m12"><a href="about.html">About Pointology</a></li>
+                        <li class="col s12 m12"><a href="login.html">Login</a></li>
+                        <li class="col s12 m12"><a href="signUp.html" >Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m12 left-align tm">
+                    <h3 class="left-align">&trade;</h3>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

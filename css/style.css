@@ -1,0 +1,100 @@
+body {
+    font-size: 16px;
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 100vh !important;
+
+    --carolinaBlue: #99badd;
+    --white: #FFFFFF;
+    --navyBlue: #0C2340;
+    --gold: #C99700;
+}
+
+#list {
+    list-style-type: circle !important;
+    margin-left: 50px !important;
+}
+
+i {
+    color: white;
+}
+
+footer {
+    background-color: var(--navyBlue);
+    height: 400px;
+    margin-top: 100px !important;
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+footer * {
+    color: white;
+}
+
+li a {
+    margin-top: 15px;
+    color: white;
+}
+
+.nav li a:hover {
+    color: var(--navyBlue);
+}
+
+p {
+    font-size: 18px;
+}
+
+.tm {
+    padding-top: 50px !important;
+}
+
+.banner {
+    background-image: url("../images/banner.PNG");
+    background-size: contain;
+    height: 100vh;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,.6);
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay h2 {
+    color: white;
+    margin-top: 20%;
+}
+
+.overlay h5 {
+    color: white !important;
+    /* font-size: 18px; */
+}
+
+.nav {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+}
+
+.nav img {
+    padding-bottom: 20px !important;
+}
+
+.sidenav {
+    background-color: var(--navyBlue) !important;
+}
+
+.sidenav li a {
+    color: white !important;
+    font-size: 18px !important;
+}
+

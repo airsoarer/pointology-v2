@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pointology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/signUp.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col s1 offset-m1 hide-on-med-and-up">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons medium">menu</i></a>
+            </div>
+            <div class="col m12 hide-on-small-only nav">
+                <ul>
+                    <li><img src="../images/banner.PNG" alt="" class="col m2 hide-on-small"></li>
+                    <li><a href="about.html" class="col m2 offset-m6">About Pointology</a></li>
+                    <li><a href="login.html" class="col m1">Login</a></li>
+                    <li><a href="signUp.html" class="col m1">Sign Up</a></li>
+                </ul>
+            </div>
+            <ul class="sidenav center-align" id="slide-out">
+                <li><a href="index.html" class="col s12">Pointology</a></li>
+                <li><a href="about.html" class="col s12">About Pointology</a></li>
+                <li><a href="login.html" class="col s12">Login</a></li>
+                <li><a href="signUp.html" class="col s12">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 offset-m3 signUp">
+                <h3 style="text-align: center !important;">Sign Up</h3>
+                <br>
+                <p class="center-align" style="display: none" id="fields">***Please make sure all fields have been filled out***</p>
+                <div class="col s6 m6" style="padding-left: 0px !important;">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" class="col m12">
+                </div>
+                <div class="col s6 m6" style="padding-right: 0px !important;">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" class="col m12">
+                </div>
+                <label for="team">Team Name</label>
+                <input type="text" id="team" class="col s12 m12">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="col s12 m12">
+                <span style="display: none;" id="emailInUse" class="col s12 m12">Email already in use.</span>
+                <div class="col s6 m6" style="padding-right: 1px !important;">
+                    <label for="city">City</label>
+                    <input type="text" id="city" class="col m12">
+                </div>
+                <div class="input-field col s6 m6" style="padding-left: 1px !important; padding-top: 9px !important;">
+                    <select id="states">
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota ">North Dakota </option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                    <label>State</label>
+                </div>
+                <div class="col s12 m12">
+                    <p class="left-align">Please enter a strong password; enter 8 or more characters, using at least one numbner</p>
+                    <label for="passOne">Password</label>
+                    <input type="password" id="passOne" class="col m12">
+                    <br>
+                    <label for="passTwo">Re-enter Password</label>
+                    <input type="password" id="passTwo" class="col m12">
+                </div>
+                <button id="enter" class="col s4 m4">Enter</button>
+            </div>
+        </div>
+        <footer style="margin-bottom: 0px !important;" class="row">
+            <div class="col m10 offset-m1 left-align title">
+                <h3 class="left-align">Pointology</h3>
+                <div class="col m4">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li class="col s12 m12"><a href="index.html">Home</a></li>
+                        <li class="col s12 m12"><a href="about.html">About Pointology</a></li>
+                        <li class="col s12 m12"><a href="login.html">Login</a></li>
+                        <li class="col s12 m12"><a href="signUp.html" >Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m12 left-align tm">
+                    <h3 class="left-align">&trade;</h3>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
